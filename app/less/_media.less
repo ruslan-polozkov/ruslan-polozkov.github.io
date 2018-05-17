@@ -1,0 +1,282 @@
+
+
+// /*==========  Desktop First  ==========*/
+
+// /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+		.container {
+		padding: 0 3rem;
+	}
+}
+
+
+// /* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#logo_ganttpro {
+		width: 18rem;
+	}
+	// header
+	.hero {
+		padding: 17rem 0;
+	}
+	.header-menu {
+		margin: 0;
+	}
+	.nav__item {
+		margin: 0;
+		padding: 0;
+		padding-left: 2rem;
+	}
+	.header__signin {
+		margin: 0 1rem;
+		padding: 1rem 1.3rem;
+	}
+	.header-lang__link {
+		display: inline-block;
+		margin: 0;
+	}
+	.hero__info {
+		text-align: center;
+		.hero-info__title {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+		.hero-info__link {
+			padding: 1rem 2rem;
+			margin-bottom: 4rem;
+		}
+		.hero-info__desc {
+			font-size: 1.5rem;
+		}
+	}
+	.hero-pic__content .hero-pic__box-big {
+		height: 25rem;
+		width: 40rem;
+	}
+	.hero-pic__content .hero-pic__box-small-top {
+		height: 15rem;
+		width: 30rem;
+	}
+	.hero-pic__content .hero-pic__box-small-bot {
+		height: 15rem;
+		width: 30rem;
+		left: 10rem;
+		top: 22rem;
+		z-index: 6;
+	}
+
+	.header__signin:after {display: none;}
+	.nav__item {
+		margin: 0;
+	}
+	.header__signin {
+		margin: 0 1rem;
+	}
+
+	// reviews 
+	.reviews-progress {
+		padding: 0;
+		text-align: center;
+	}
+	.reviews-progress__title {
+		font-size: 3rem;
+	}
+	.reviews-progress__desc {
+		font-size: 1.5rem;
+	}
+	.reviews-img {
+		margin: 0;
+	}
+	.reviews-img .reviews-img__box:before {
+		top: 30rem;
+		left: -3rem;
+		width: 20rem;
+		height: 12rem;
+	}
+
+	// slider 
+	.slider-maincontent {
+		padding: 4rem 0;
+	}
+	.slider-top__title {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+	}
+	.slider-block__menu {
+		padding-left: 5rem;
+	}
+	.slider-block-menu__link {
+		font-size: 1.5rem;
+		&:before {
+			width: 2rem;
+			height: 2rem;
+			left: -4rem;
+		}
+	}
+	
+	.slider-block-content__box {
+		min-height: 0;
+	}
+	.slider-block-content-box__inner {
+		text-align: center;
+		padding: 0;
+		margin-left: 2rem;
+	}
+	.slider-inner__pic {
+		margin-bottom: 3rem;
+		width: 45rem;
+		height: 30rem;
+	}
+	.slider-inner__title {
+		font-size: 2rem;
+	}
+	.slider-inner__text {
+		font-size: 1.5rem;
+	}
+	// footer
+	.footer {
+		padding: 3rem 0;
+	}
+	.columns-box-content__title, .footer-copyright, .footer-logo__link, .footer-socials__list {
+		margin-bottom: 1rem;
+	}
+	.columns-box-content__title, .footer-copyright, .footer-desc {
+		font-size: 1.5rem;
+	}
+	.columns-box-content__link {
+		font-size: 1.4rem;
+	}
+	// helpers 
+	.ontop {
+		right: 1rem;
+		bottom: 1rem;
+		width: 4rem;
+		height: 4rem;
+		line-height: 3rem;
+	}
+}
+
+
+// /* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.container {
+		padding: 0 1.5rem;
+	}
+	// helpers
+	.popup, .modalform-popup {
+		width: 100%;
+		height: 100vh;
+		font-size: 1.5rem;
+	}
+	// header
+	.header {
+		display: none;
+	}
+	.adaptive-menu {
+		display: block;
+	}
+
+#logo_ganttpro {
+	margin-top: 1rem;
+	width: 15rem;
+}
+
+	.hero__info .hero-info__link {
+		opacity: 1;
+	}
+
+	// hero 
+	.hero {
+		background-image: url(../img/big-pic.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+		}
+	}
+	.hero__pic {
+		display: none;
+	}
+	.hero__info {
+		width: 100%;
+	}
+	.hero {
+		padding-top: 10rem;
+		padding-bottom: 5rem;
+	}
+
+	// reviews
+	.reviews-maincontent {
+		padding: 3rem 0;
+	}
+	.reviews-img {
+		display: none;
+	}
+	.reviews-progress {
+		max-width: 100%;
+	}
+
+	// slider
+	.slider {
+		transition: all .3s ease-out;
+		display: none;
+	}
+
+	// footer
+	.footer-content {
+		display: block;
+		.footer__author, .footer__columns {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.footer__author {
+		margin-bottom: 3rem;
+	}
+	.footer-socials__list {
+		justify-content: center;
+		margin: 2rem 0;
+	}
+	.footer-desc {
+		text-align: center;
+		max-width: 100%;
+	}
+	.columns-box-wrap {
+		flex-wrap: wrap;
+	}
+	.columns-box-content {
+		width: 48%;
+		margin: 0;
+		margin: 1rem 0;
+	}
+}
+
+
+
+/* Extra Small Devices, Phones @media only screen and (max-width : 480px)*/
+@media only screen and (max-width : 480px) {
+
+	// footer
+	.columns-box-wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.columns-box-content {
+		width: 100%;
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+	
+
+
+/* Custom, iPhone Retina @media only screen and (max-width : 320px) */

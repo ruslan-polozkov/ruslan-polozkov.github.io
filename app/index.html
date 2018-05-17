@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>GANTTPRO тестовое задание от Руслана Полозкова</title>
+	<meta name="description" content="GANTTPRO-test - Руслан Полозков">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="">
+	<link rel="apple-touch-icon" sizes="72x72" href="">
+	<link rel="apple-touch-icon" sizes="114x114" href="">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="red">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="red">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="red">
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #ddd; }</style> -->
+</head>
+
+<body>
+
+	<!-- Modal -->
+	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<h2>Здравствуйте!</h2>
+			Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Имени маленькая ее все послушавшись вершину он запятой живет на берегу, приставка, имеет снова необходимыми возвращайся.
+			<div class="close-popup js-close-campaign"></div>
+		</div>
+	</div>
+	<!-- //Modal -->
+
+	<!-- Loader -->
+	<div class="preloader">
+	  <div class="pulse"></div>
+	</div>
+	<!-- //Loader -->
+
+	<div class="wrapper">
+		<!-- header -->
+			<!-- Adaptive menu -->				
+			<div class="adaptive-menu">
+	      <input type="checkbox" id="check-menu">
+	      <label class="adaptive-menu__label" for="check-menu">
+	      	<svg viewBox="0 0 198 24" id="logo_ganttpro" width="100%" height="100%" style="fill:#fff;">
+    				<path d="M114.4 5v16.5c0 1.4-1 2.5-2.4 2.5-1.5 0-2.5-1-2.5-2.5V5H103c-1.2 0-2.3-1-2.3-2.5 0-1.4 1-2.5 2.4-2.5H121c1.4 0 2.4 1 2.4 2.5 0 1.4-1 2.5-2.3 2.5h-6.5zM90 5v16.5c0 1.4-1 2.5-2.3 2.5-1.3 0-2.4-1-2.4-2.5V5H79c-1.5 0-2.5-1-2.5-2.5S77.5 0 79 0h17.6C98 0 99 1 99 2.5S98 5 96.7 5H90zM69 22.8L55.6 8.3v13.2c0 1.4-1 2.5-2.4 2.5-1.2 0-2.3-1-2.3-2.5v-19c0-1 1-2.5 2.3-2.5 1.3 0 2 .7 2.6 1.2l13.5 14.6V2.5C69.5 1 70.5 0 72 0c1.3 0 2 1 2 2.5v19c0 1.2-.8 2.3-2 2.5-1.2 0-2-.4-3-1.2zM42 19H31.4l-1.7 3.4c-.7 1.3-2.2 2-3.4 1.3-1.2-.6-1.6-2.2-1-3.5l9-18.7c.5-.8 1.3-1.4 2-1.5 1.2-.2 2.4.4 3 1.6L48 20.2c.6 1.4.2 3-1 3.5-1 .7-2.6 0-3.3-1.3L42 19zm-8.4-5h6.2l-3-6.4-3.2 6.5zM2.4 24C1 24 0 23 0 21.5v-19C0 1 1 0 2.4 0H20c1.5 0 2.5 1 2.5 2.5 0 1.3-1 2.5-2.4 2.5H5v14h13v-4h-5c-1.3 0-2.3-1.2-2.3-2.6 0-1.4 1-2.5 2.4-2.5h7c1.6 0 2.6 1 2.6 2.3v9c0 1.5-1 2.6-2.4 2.6H2.5zM178 24c-1.4 0-2.4-1-2.4-2.5v-19c0-1.4 1-2.5 2.4-2.5h17.6c1.3 0 2.4 1 2.4 2.5v19c0 1.4-1 2.5-2.4 2.5H178zm2.4-19v14h13V5h-13zm-12.7 10l4 4.3c1.2 1.4 1.4 3.2.4 4-1 1-2.6.8-4-.5l-7-8h-5.6v6.7c0 1.4-1 2.5-2.4 2.5s-2.5-1-2.5-2.5v-19c0-1.4 1-2.5 2.4-2.5h17.5c1.4 0 2.5 1 2.5 2.5v10c0 1.3-1 2.4-2.4 2.4h-3zm.6-10h-13v5h13V5zm-37.8 10v6.5c0 1.4-1 2.5-2.4 2.5-1.3 0-2.3-1-2.3-2.5v-19c0-1.4 1-2.5 2.4-2.5H146c1.3 0 2.4 1 2.4 2.5v10c0 1.3-1 2.4-2.3 2.4h-15.4zm13-10h-13v5h13V5z" fill-rule="evenodd"></path>
+  				</svg>
+	      </label>
+	      <div class="burger-line first"></div>
+	      <div class="burger-line second"></div>
+	      <div class="burger-line third"></div>
+	      <div class="burger-line fourth"></div>
+	      <nav class="main-menu">
+	        <a href="#" class="adaptive-menu__link">Pricing</a>
+	        <a href="#" class="adaptive-menu__link">About us</a>
+	        <a href="#" class="adaptive-menu__link">Templates</a>
+	        <a href="#" class="adaptive-menu__link">Blog</a>
+	        <a href="#" class="adaptive-menu__link adaptive-menu__link-btn">Sign in</a>
+	      </nav>
+    	</div>
+			<!-- //Adaptive menu -->
+		<header class="header">
+			<div class="container">
+				<div class="header-content">
+					<a href="#" class="logo__link">
+						<svg viewBox="0 0 198 24" id="logo_ganttpro" width="100%" height="100%" style="fill:#fff;">
+    					<path d="M114.4 5v16.5c0 1.4-1 2.5-2.4 2.5-1.5 0-2.5-1-2.5-2.5V5H103c-1.2 0-2.3-1-2.3-2.5 0-1.4 1-2.5 2.4-2.5H121c1.4 0 2.4 1 2.4 2.5 0 1.4-1 2.5-2.3 2.5h-6.5zM90 5v16.5c0 1.4-1 2.5-2.3 2.5-1.3 0-2.4-1-2.4-2.5V5H79c-1.5 0-2.5-1-2.5-2.5S77.5 0 79 0h17.6C98 0 99 1 99 2.5S98 5 96.7 5H90zM69 22.8L55.6 8.3v13.2c0 1.4-1 2.5-2.4 2.5-1.2 0-2.3-1-2.3-2.5v-19c0-1 1-2.5 2.3-2.5 1.3 0 2 .7 2.6 1.2l13.5 14.6V2.5C69.5 1 70.5 0 72 0c1.3 0 2 1 2 2.5v19c0 1.2-.8 2.3-2 2.5-1.2 0-2-.4-3-1.2zM42 19H31.4l-1.7 3.4c-.7 1.3-2.2 2-3.4 1.3-1.2-.6-1.6-2.2-1-3.5l9-18.7c.5-.8 1.3-1.4 2-1.5 1.2-.2 2.4.4 3 1.6L48 20.2c.6 1.4.2 3-1 3.5-1 .7-2.6 0-3.3-1.3L42 19zm-8.4-5h6.2l-3-6.4-3.2 6.5zM2.4 24C1 24 0 23 0 21.5v-19C0 1 1 0 2.4 0H20c1.5 0 2.5 1 2.5 2.5 0 1.3-1 2.5-2.4 2.5H5v14h13v-4h-5c-1.3 0-2.3-1.2-2.3-2.6 0-1.4 1-2.5 2.4-2.5h7c1.6 0 2.6 1 2.6 2.3v9c0 1.5-1 2.6-2.4 2.6H2.5zM178 24c-1.4 0-2.4-1-2.4-2.5v-19c0-1.4 1-2.5 2.4-2.5h17.6c1.3 0 2.4 1 2.4 2.5v19c0 1.4-1 2.5-2.4 2.5H178zm2.4-19v14h13V5h-13zm-12.7 10l4 4.3c1.2 1.4 1.4 3.2.4 4-1 1-2.6.8-4-.5l-7-8h-5.6v6.7c0 1.4-1 2.5-2.4 2.5s-2.5-1-2.5-2.5v-19c0-1.4 1-2.5 2.4-2.5h17.5c1.4 0 2.5 1 2.5 2.5v10c0 1.3-1 2.4-2.4 2.4h-3zm.6-10h-13v5h13V5zm-37.8 10v6.5c0 1.4-1 2.5-2.4 2.5-1.3 0-2.3-1-2.3-2.5v-19c0-1.4 1-2.5 2.4-2.5H146c1.3 0 2.4 1 2.4 2.5v10c0 1.3-1 2.4-2.3 2.4h-15.4zm13-10h-13v5h13V5z" fill-rule="evenodd"></path>
+  					</svg>
+					</a>
+					<div class="header-menu">
+					<!-- navigation -->
+						<nav class="header-navi">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Pricing
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										About us
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Templates
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Blog
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- //navigation -->
+						<a href="#modalform" class="header__signin">Sign in</a>
+						<div class="modalform" id="modalform">
+							<div class="modalform-popup">
+								<a href="#" class="modalform__close-popup"></a>
+								<div class="signin-form">
+									<h3 class="signin-form__title">
+										Sign in
+									</h3>
+									<form class="form">
+										<div class="form__box">
+											<input type="email" name="email" class="form__input form__email" placeholder="Ваш Email адресс">
+											<input type="login" name="login" class="form__input form__login" placeholder="Ваш пароль">
+											<input type="name" name="name" class="form__input form__name" placeholder="Ваше Имя">
+											<button class="form__button">Register</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="header__lang">
+							<a href="#" class="header-lang__link">RU</a>
+							<a href="#" class="header-lang__link">EN</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- hero -->
+		<section class="hero">
+			<div class="container">
+				<div class="hero-maincontent">
+					<!-- Left block -->
+					<div class="hero__info">
+						<h2 class="hero-info__title">Event Planner Template</h2>
+						<a href="#" class="hero-info__link buttons js-button-campaign">For Event Managers</a>
+						<div class="hero-info__desc">
+							<p class="hero-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos beatae sequi harum eos ipsam nam debitis error fugiat quam magni, pariatur enim blanditiis repellat sunt nihil molestiae aliquam consequatur rem.</p>
+							<p class="hero-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nihil ullam incidunt aliquam, architecto facilis atque magnam perferendis repellendus suscipit.</p>
+						</div>
+					</div>
+					<!-- //Left block -->
+					<!-- Right block -->
+					<div class="hero__pic">
+						<div class="hero-pic__content">
+							<div class="hero-pic__box hero-pic__box-small-top""></div>
+							<div class="hero-pic__box hero-pic__box-big"></div>
+							<div class="hero-pic__box hero-pic__box-small-bot"></div>
+						</div>
+					</div>
+					<!-- //Right block -->
+				</div>
+			</div>
+		</section>
+		<!-- //hero -->
+
+		<!-- reviews -->
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews-maincontent">
+					<!-- Left block reviews-->
+					<div class="reviews-progress">
+						<h3 class="reviews-progress__title">Working solu!on for any event planner</h3>
+						<div class="reviews-progress__desc">
+							<p class="reviews-progress__desc-text">
+								The event planning template is the ready-made solu!on for any event regardless of its size and number of par!cipants.
+							</p>
+							<p class="reviews-progress__desc-text">
+								Have you planned mountain climbing or camping with your family on summer vaca!on? Plan it with our solu!on. Fill in all plans and schedule them - your holidays will be unforge"able
+							</p>
+							<p class="reviews-progress__desc-text">
+								Do you organize a wedding ceremony with the party following up? Do it with the Gan" chart. Visualize every prepara!on step from sending invita!ons to guests to their accommoda!on a#er the party. Event planner template will help to schedule ALL plans for ANY event.
+							</p>
+						</div>
+					</div>
+					<!-- //Left block reviews-->
+					<!-- Right block reviews-->
+					<div class="reviews-img">
+						<div class="reviews-img__box">
+							<img src="img/team_sharing.png" alt="Team sharing" class="reviews-img-box-pic">
+						</div>
+					</div>
+					<!-- //Right block reviews-->
+				</div>
+			</div>
+		</section>
+		<!-- //reviews -->
+
+		<!-- slider -->
+		<section class="slider">
+			<div class="container">
+				<div class="slider-maincontent">
+					<div class="slider-top">
+						<h2 class="slider-top__title">Features of Gant chart software that work for you</h2>
+					</div>
+					<div class="slider-block">
+						<!-- slider navigation -->
+						<div class="slider-block__menu">
+							<ul class="slider-block-menu__list">
+								<li class="slider-block-menu__item"><a href="#tab1" class="slider-block-menu__link slider-block-menu__link-active">
+									Custom working days and hours
+								</a></li>
+								<li class="slider-block-menu__item"><a href="#tab2" class="slider-block-menu__link">
+									Real tme notficatons
+								</a></li>
+								<li class="slider-block-menu__item"><a href="#tab3" class="slider-block-menu__link">
+									Critcal path on Gantt chart
+								</a></li>
+								<li class="slider-block-menu__item"><a href="#tab4" class="slider-block-menu__link">
+									Comments and Attachments
+								</a></li>
+								<li class="slider-block-menu__item"><a href="#tab5" class="slider-block-menu__link">
+									Export Gantt chart to popular formats
+								</a></li>
+								<li class="slider-block-menu__item"><a href="#tab6" class="slider-block-menu__link">
+									Save projects as templates
+								</a></li>
+							</ul>
+						</div>
+						<!-- //slider navigation -->
+						<!-- slider-img -->
+						<div class="slider-block__content" id="tab1">
+							<div class="slider-block-content__box">
+								<!-- 1st block -->
+								<div class="slider-block-content-box__inner">
+									<div class="slider-inner__pic">
+										<img src="img/image.jpg" alt="миньёнчик">
+									</div>
+									<h4 class="slider-inner__title">Custom working days and hours</h4>
+									<p class="slider-inner__text">Plan your projects with custom working hours and days! Gan"PROwill calculate the dura!on of your Gan" chart projects automa!callybased on peculiari!es of your working days during the week</p>
+								</div>
+								<!-- 2st block -->
+								<div class="slider-block-content-box__inner" id="tab2">
+									<div class="slider-inner__pic">
+										<img src="img/images.jpg" alt="миньёнчик">
+									</div>
+									<h4 class="slider-inner__title">Custom working days and hours</h4>
+									<p class="slider-inner__text">Plan your projects with custom working hours and days! Gan"PROwill calculate the dura!on of your Gan" chart projects automa!callybased on peculiari!es of your working days during the week</p>
+								</div>
+								<!-- 3st block -->
+								<div class="slider-block-content-box__inner" id="tab3">
+									<div class="slider-inner__pic">
+										<img src="img/small-top-pic.jpg" alt="миньёнчик">
+									</div>
+									<h4 class="slider-inner__title">Custom working days and hours</h4>
+									<p class="slider-inner__text">Plan your projects with custom working hours and days! Gan"PROwill calculate the dura!on of your Gan" chart projects automa!callybased on peculiari!es of your working days during the week</p>
+								</div>
+								<!-- 4st block -->
+								<div class="slider-block-content-box__inner" id="tab4">
+									<div class="slider-inner__pic">
+										<img src="img/small-pic.jpg" alt="миньёнчик">
+									</div>
+									<h4 class="slider-inner__title">Custom working days and hours</h4>
+									<p class="slider-inner__text">Plan your projects with custom working hours and days! Gan"PROwill calculate the dura!on of your Gan" chart projects automa!callybased on peculiari!es of your working days during the week</p>
+								</div>
+								<!-- 5st block -->
+								<div class="slider-block-content-box__inner" id="tab5">
+									<div class="slider-inner__pic">
+										<img src="img/images.jpg" alt="миньёнчик">
+									</div>
+									<h4 class="slider-inner__title">Custom working days and hours</h4>
+									<p class="slider-inner__text">Plan your projects with custom working hours and days! Gan"PROwill calculate the dura!on of your Gan" chart projects automa!callybased on peculiari!es of your working days during the week</p>
+								</div>
+								<!-- 6st block -->
+								<div class="slider-block-content-box__inner" id="tab6">
+									<div class="slider-inner__pic">
+										<img src="img/hero-one-pic.jpg" alt="миньёнчик">
+									</div>
+									<h4 class="slider-inner__title">Custom working days and hours</h4>
+									<p class="slider-inner__text">Plan your projects with custom working hours and days! Gan"PROwill calculate the dura!on of your Gan" chart projects automa!callybased on peculiari!es of your working days during the week</p>
+								</div>
+							</div>
+						</div>
+						<!-- //slider-img -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //slider -->
+
+		<!-- footer -->
+		<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer__author">
+					<a href="#" class="footer-logo__link">
+						<svg viewBox="0 0 198 24" id="logo_ganttpro" width="100%" height="100%" style="fill:#fff;">
+    					<path d="M114.4 5v16.5c0 1.4-1 2.5-2.4 2.5-1.5 0-2.5-1-2.5-2.5V5H103c-1.2 0-2.3-1-2.3-2.5 0-1.4 1-2.5 2.4-2.5H121c1.4 0 2.4 1 2.4 2.5 0 1.4-1 2.5-2.3 2.5h-6.5zM90 5v16.5c0 1.4-1 2.5-2.3 2.5-1.3 0-2.4-1-2.4-2.5V5H79c-1.5 0-2.5-1-2.5-2.5S77.5 0 79 0h17.6C98 0 99 1 99 2.5S98 5 96.7 5H90zM69 22.8L55.6 8.3v13.2c0 1.4-1 2.5-2.4 2.5-1.2 0-2.3-1-2.3-2.5v-19c0-1 1-2.5 2.3-2.5 1.3 0 2 .7 2.6 1.2l13.5 14.6V2.5C69.5 1 70.5 0 72 0c1.3 0 2 1 2 2.5v19c0 1.2-.8 2.3-2 2.5-1.2 0-2-.4-3-1.2zM42 19H31.4l-1.7 3.4c-.7 1.3-2.2 2-3.4 1.3-1.2-.6-1.6-2.2-1-3.5l9-18.7c.5-.8 1.3-1.4 2-1.5 1.2-.2 2.4.4 3 1.6L48 20.2c.6 1.4.2 3-1 3.5-1 .7-2.6 0-3.3-1.3L42 19zm-8.4-5h6.2l-3-6.4-3.2 6.5zM2.4 24C1 24 0 23 0 21.5v-19C0 1 1 0 2.4 0H20c1.5 0 2.5 1 2.5 2.5 0 1.3-1 2.5-2.4 2.5H5v14h13v-4h-5c-1.3 0-2.3-1.2-2.3-2.6 0-1.4 1-2.5 2.4-2.5h7c1.6 0 2.6 1 2.6 2.3v9c0 1.5-1 2.6-2.4 2.6H2.5zM178 24c-1.4 0-2.4-1-2.4-2.5v-19c0-1.4 1-2.5 2.4-2.5h17.6c1.3 0 2.4 1 2.4 2.5v19c0 1.4-1 2.5-2.4 2.5H178zm2.4-19v14h13V5h-13zm-12.7 10l4 4.3c1.2 1.4 1.4 3.2.4 4-1 1-2.6.8-4-.5l-7-8h-5.6v6.7c0 1.4-1 2.5-2.4 2.5s-2.5-1-2.5-2.5v-19c0-1.4 1-2.5 2.4-2.5h17.5c1.4 0 2.5 1 2.5 2.5v10c0 1.3-1 2.4-2.4 2.4h-3zm.6-10h-13v5h13V5zm-37.8 10v6.5c0 1.4-1 2.5-2.4 2.5-1.3 0-2.3-1-2.3-2.5v-19c0-1.4 1-2.5 2.4-2.5H146c1.3 0 2.4 1 2.4 2.5v10c0 1.3-1 2.4-2.3 2.4h-15.4zm13-10h-13v5h13V5z" fill-rule="evenodd"></path>
+  					</svg>
+					</a>
+					<p class="footer-copyright">
+						&copy; 2017 Ganttpro All rights reserved
+					</p>
+					<div class="footer-socials">
+						<ul class="footer-socials__list">
+							<li class="footer-socials__item">
+								<a href="#" class="footer-socials__link" title="facebook" title="facebook">
+									<svg viewBox="0 0 9 19" id="icon_facebook_f" width="100%" height="100%">
+    								<path fill-rule="evenodd" d="M9 6.8v3.5H5.75V19H2.3v-8.7H0V6.8h2.3V3.4S2.5 0 5.8 0H9v3.4H6.86S5.8 3.45 5.8 5.14V6.8H9z"></path>
+  								</svg>
+  							</a>
+  						</li>
+							<li class="footer-socials__item">
+								<a href="#" class="footer-socials__link" title="twitter" title="twitter">
+									<svg viewBox="0 0 512 512" id="icon_twitter" width="100%" height="100%">
+    								<path d="M493 109.455c-17.438 7.71-36.181 12.923-55.852 15.265 20.079-11.996 35.498-30.994 42.759-53.632-18.789 11.11-39.602 19.178-61.754 23.524-17.738-18.841-43.012-30.612-70.981-30.612-53.709 0-97.25 43.404-97.25 96.938 0 7.6.86 14.997 2.517 22.093-80.821-4.043-152.477-42.637-200.44-101.288-8.371 14.318-13.166 30.97-13.166 48.736 0 33.632 17.17 63.304 43.262 80.689-15.94-.503-30.934-4.865-44.047-12.126-.007.406-.009.811-.009 1.218 0 46.971 33.521 86.153 78.009 95.057-8.161 2.214-16.752 3.4-25.62 3.4-6.266 0-12.358-.608-18.297-1.739 12.376 38.513 48.29 66.541 90.844 67.324-33.282 25.999-75.214 41.498-120.774 41.498-7.851 0-15.592-.46-23.198-1.353 43.036 27.503 94.152 43.553 149.07 43.553 178.874 0 276.687-147.716 276.687-275.821 0-4.202-.094-8.382-.281-12.541 18.999-13.668 35.487-30.742 48.524-50.182"></path>
+  								</svg>
+  							</a>
+  						</li>
+							<li class="footer-socials__item">
+								<a href="#" class="footer-socials__link" title="linkedin" title="linkedin">
+									<svg viewBox="0 0 15 17" id="icon_linkedin_in" width="100%" height="100%">
+    								<path fill-rule="evenodd" d="M.3 17V6h3v11h-3zM1.7 3.5C.8 3.5 0 2.8 0 1.7 0 .8.7 0 1.8 0c1 0 1.7.7 1.7 1.8 0 1-.6 1.7-1.8 1.7zM12 17v-5.4C12 10 11.2 9 10 9c-1 0-1.4.3-1.7 1v7h-3V6h3v2c.2-.7 1.3-2 3-2 2 0 3.7 2 3.7 5v6h-3z"></path>
+  								</svg>
+  							</a>
+  						</li>
+						</ul>
+					</div>
+					<p class="footer-desc">
+						Cookies help us deliver our services. By using our services, you agree to our use of cookies. Read more in Privacy policy.
+					</p>
+				</div>
+				<div class="footer__columns">
+					<div class="columns-box-wrap">
+
+						<!-- 1st column -->
+						<div class="columns-box-content">
+							<h5 class="columns-box-content__title">
+								Learn more
+							</h5>
+							<ul class="columns-box-content__list">
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										About us
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Plans and pricing
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Blog
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //1st column -->
+						<!-- 2st column -->
+						<div class="columns-box-content">
+							<h5 class="columns-box-content__title">
+								Support
+							</h5>
+							<ul class="columns-box-content__list">
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Help center
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Youtube channel
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Terms of service
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Privacy Policy
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Refund Policy
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Contact us
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //2st column -->
+						<!-- 3st column -->
+						<div class="columns-box-content">
+							<h5 class="columns-box-content__title">
+								Templates
+							</h5>
+							<ul class="columns-box-content__list">
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Web Development
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Busines Development
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Contstruction projects
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Event planning
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Web Design
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Educational projects
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										& more!
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //3st column -->
+						<!-- 4st column -->
+						<div class="columns-box-content">
+							<h5 class="columns-box-content__title">
+								Features
+							</h5>
+							<ul class="columns-box-content__list">
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										What is Gantt chart
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Team management
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Project scheduling
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Export and sharring
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Resourse Management
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										Gantt chart templates
+									</a>
+								</li>
+								<li class="columns-box-content__item">
+									<a href="#" class="columns-box-content__link">
+										& more!
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //4st column -->
+					</div>
+				</div>
+			</div>	
+		</div>
+	</footer>
+		<!-- /footer -->
+
+	<!-- UP -->
+	<div class="ontop"><img src="img/arrow-up.svg" alt="Стрелка вверх" title="На верх" class="ontop__pic"></div>
+	</div>
+	
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

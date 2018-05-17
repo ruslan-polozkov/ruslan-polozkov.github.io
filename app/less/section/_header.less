@@ -1,0 +1,263 @@
+.header {
+	// position: sticky;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 300;
+	padding: 5rem 0;
+	transition: .5s all;
+}
+
+.header-navi-mobile__box {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	display: none;
+}
+
+.header-navi__mobile {
+	display: block;
+	width: 3.5rem;
+	height: .3rem;
+	background-color: #fff;
+	position: relative;
+	border-radius: 3px;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: .3rem;
+		background-color: #fff;
+		top: .9rem;
+		left: 0;
+		border-radius: 3px;
+		transition: .2s 
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: .3rem;
+		background-color: #fff;
+		bottom: .9rem;
+		right: 0;
+		border-radius: 3px;
+		transition: .2s 
+	}
+	&:active {
+		background-color: transparent;
+		&:after {
+			transform: rotate(45deg);
+			bottom: 0;
+		}
+		&:before {
+			transform: rotate(-45deg);
+			top: 0;
+		}
+	}
+}
+// Adaptive menu
+.adaptive-menu {
+	display: none;
+	width: 100%;
+	background-color: #11554d;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	height: 4rem;
+	z-index: 500;
+	font-family: 'Latobold', sans-serif;
+}
+
+#check-menu{
+  display: none;
+}
+
+label.adaptive-menu__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 4rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.burger-line{
+  position: absolute;
+  top: .8rem;
+  right: 1rem;
+  width: 3.5rem;
+  height: .2rem;
+  background-color: #fff;
+  transition: .5s all;
+}
+
+.second, .third{
+  top: 1.8rem;
+}
+
+.fourth{
+  top: 2.8rem;
+}
+.main-menu{
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: .5s all;
+}
+.adaptive-menu__link {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,.3);
+  background-color: #11554d;
+  font-family: 'LatoMedium',sans-serif;
+  &:hover {
+  	font-weight: 700;
+  }
+  &-btn {
+  	background-color: #fff;
+  	color: #11554d;
+  }
+}
+
+#check-menu:checked ~ .main-menu{
+    max-height: 50rem;
+    font-size: 1.5rem;
+}
+
+#check-menu:checked ~ .first{
+    display: none;
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+// Adaptive menu
+#logo_ganttpro {
+	width: 20rem;
+	height: auto;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+}
+
+.nav__list {
+	display: flex;
+}
+
+.nav__item {
+	padding: 1.4rem 2.5rem;
+	margin-right: 1rem;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.nav__link {
+	display: block;
+	position: relative;
+	color: #fff;
+	opacity: .5;
+	&:after {
+		position: absolute;
+		display: inline-block;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+    transform: translateY(10px);
+	}
+}
+
+.nav__link:hover::after {
+	opacity: 0.5;
+	transform: translateY(1px);
+	height: 2px;
+}
+
+.nav__link:hover {
+	opacity: 1;
+}
+
+.header__signin {
+	position: relative;
+	margin: 0 6rem;
+	display: inline-block;
+	padding: 1.4rem 2.5rem;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 2px 1px 5px -1px rgba(255,255,255,0.85);
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 1px;
+		height: 100%;
+		background-color: rgba(255,255,255,0.1);
+		right: -3rem;
+		top: 0;
+	}
+	&:hover {
+		background-color: rgba(255,255,255,0.4);
+		color: darken(#fff, .3);
+	}
+}
+
+.header-lang__link {
+	color: rgba(255,255,255,0.5);
+	display: block;
+	margin-bottom: 1rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.fix {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #fff;
+}

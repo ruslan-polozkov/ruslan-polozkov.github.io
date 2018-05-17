@@ -1,0 +1,241 @@
+// OnTop
+.ontop {
+	z-index: 15;
+	position: fixed;
+	right: 5rem;
+	bottom: 5rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background-color: #808080;
+	text-align: center;
+	line-height: 5rem;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: .5;
+	padding: 1rem;
+	&:hover {
+		opacity: 1;
+	}
+	&.activetop {
+		right: 10rem;
+	}
+}
+
+.activetop {
+	right: 10rem;
+}
+
+.ontop__pic {
+	max-width: 100%;
+}
+
+// Preloader
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999;
+	background-color: #008a7a;
+	filter: opacity(90%);
+	transition: all .3s;
+}
+
+.pulse {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-left: -4rem;
+	margin-top: -4rem;
+	&:before, &:after {
+		content: '';
+		border: 5px solid #323232;
+		width: 8rem;
+		height: 8rem;
+		border-radius: 50%;
+		position: absolute;
+	}
+	&:before {
+		animation: pulse-outher .8s ease-in infinite
+	}
+	&:after {
+		animation: pulse-inner .8s linear infinite
+	}
+}
+@keyframes pulse-outher {
+	0% {
+		filter: opacity(100);
+	}	
+	50% {
+		filter: opacity(50);
+	}	
+	100% {
+		filter: opacity(0);
+	}	
+}
+@keyframes pulse-inner {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+// Modal window
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+	z-index: 9999;
+}
+
+.popup {
+	position: fixed;
+	width: 40rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 4rem;
+	background-color: #11554d;
+	color: #fff;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+// modalForm
+.modalform {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+	z-index: 9999;
+}
+
+.modalform:target {
+	display: block;
+}
+
+.modalform-popup {
+	position: fixed;
+	width: 40rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 4rem;
+	background-color: #11554d;
+	color: #fff;
+}
+
+.modalform__close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.modalform__close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.modalform__close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+.signin-form__title {
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.form__input {
+	width: 100%;
+	height: 3.5rem;
+	margin-bottom: 1rem;
+	outline: none;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	color: #808080;
+	transition: all .3s ease-in-out;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:focus {
+		box-shadow: 0 0 8px #88D5E9;
+	}
+}
+
+.form__button {
+	display: block;
+	margin: 0 auto;
+	text-transform: uppercase;
+	background-color: #11554d;
+	color: #fff;
+	font-weight: 500;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	width: 100%;
+	box-shadow: 2px 1px 5px -1px rgba(255,255,255,0.85);
+	outline: none;
+	transition: all 0.30s ease-in-out;
+	margin-top: 2rem;
+	&:hover {
+		background-color: darken(#11554d, .9);
+	}
+}

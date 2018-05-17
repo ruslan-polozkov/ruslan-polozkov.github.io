@@ -1,0 +1,56 @@
+.reviews {
+	background-color: #fafafa;
+	overflow: hidden;
+}
+
+.reviews-maincontent {
+	display: flex;
+	padding: 10rem 0;
+}
+
+.reviews-progress {
+	max-width: 50%;
+	padding-right: 8rem;
+}
+
+// Text box
+
+.reviews-progress__title {
+	color: #404040;
+	font-size: 4rem;
+	margin-bottom: 3.5rem;
+}
+
+.reviews-progress__desc-text {
+	color: #707070;
+	margin-bottom: 3.5rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&::selection {
+		background-color: #11554d;
+	}
+}
+
+// Img box
+.reviews-img {
+	position: relative;
+	margin-left: 7rem;
+	.reviews-img__box {
+		position: absolute;
+		left: 5rem;
+		&:before {
+			content: '';
+			display: block;
+			width: 35rem;
+			height: 20rem;
+			position: absolute;
+			left: -10rem;
+			bottom: 10rem;
+			background-image: url(../../img/small-pic.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
